@@ -1,0 +1,67 @@
+@import url(reset.css);
+
+.red {
+	color: red;
+}
+
+.text {
+	color: rgb(0, 13, 73);
+}
+
+h2 {
+	color:rgb(0, 58, 0);
+}
+h3 {
+	color:rgb(0, 153, 0);
+}
+h4 {
+	color:rgb(38, 146, 119);
+
+}
+
+/*! HEADER */
+.header  {
+	color: blue;
+}
+
+.header-link p{
+	color: grey;
+}
+
+.list{
+	color:rgb(255, 54, 4);
+	;
+}
+ul li{
+	color: rgb(146, 31, 2);
+
+}
+
+/*! MAIN */
+.engines > li{
+	color: rgb(121, 121, 121);
+}
+
+#unique{
+	color:  blueviolet;
+
+}
+#top-model{
+	color: navy;
+}
+
+.models{
+	color: rgb(128, 0, 110);
+}
+
+.text.tomato{
+	color: tomato;
+}
+
+.r34gtr~p{
+	color: mediumpurple;
+}
+
+[class*="__сontainer"]{
+	color: hotpink;
+}
