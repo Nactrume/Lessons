@@ -1,0 +1,101 @@
+@import url(reset.css);
+
+@font-face {
+	font-family: 'RussoOne';
+    src: url('../fonts/RussoOne-Regular.woff2') format('woff2'),
+        url('../fonts/RussoOne-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	font-family: 'Kanit', sans-serif;
+	}
+
+footer{
+	font-family: 'RussoOne',sans-serif;
+}
+
+h1{
+	font-family: 'Unbounded', cursive;
+	font-size: 60px;
+	text-decoration: underline;
+	text-shadow: 4px 4px 5px rgb(70, 70, 70);	
+}
+
+h2,h3,h4,h5 {
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+h2{
+	font-size:30px ;
+	color: rebeccapurple;
+	font-weight: 700;
+	
+
+}
+h3{
+	font-size: 20px;
+	color: rebeccapurple;
+	font-weight: 700;
+
+}
+h4{
+	font-size: 18px;
+	color: navy;
+	font-weight: 400;
+	font-style: italic;
+	text-decoration: overline;
+}
+h5{
+	letter-spacing: 3px;
+}
+.color-green {
+	color: green;
+}
+
+.text{
+	text-indent: 20px;
+	text-align: justify;
+}
+/* HEADER */
+
+.header {
+text-align: center;
+}
+
+.header h1{
+	font-weight: 900;
+}
+
+.header-list{
+	text-align: left;
+}
+
+.header-list {
+	font-family: 'Ubuntu', sans-serif;	
+}
+
+.list-item {
+	color: maroon;
+}
+
+.list-subitem {
+	color: rgb(179, 0, 0);
+}
+
+
+/* MAIN */
+.image-text{
+	font-size: 12px;
+}
+
+
+/* FOOTER */
+.footer li {
+	color: indianred;
+	letter-spacing:3px;
+	line-height: 1.3;
+	
+}
