@@ -1,0 +1,85 @@
+@import url(reset.css);
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #6C757D;
+}
+
+h2{
+	font-weight: 700;
+	font-size: 25px;
+	color: #212529;
+}
+
+.wrapper{
+	
+}
+[class*=__container]{
+	max-width: 816px;
+	margin: 0px auto	80px;
+
+}
+
+
+.title{
+	max-width: 400px;
+	line-height: 1.6;
+	margin:80px 0px 40px 0px;
+}
+
+.info{
+	margin: 0px 0px 15px 0px;
+}
+
+
+.info-text{
+	font-size: 14px;
+	display: inline-block;
+	margin:0px 25px 0px 0px;
+	}
+
+.author	{
+	font-weight: 700;
+}
+
+
+.article-text{
+	margin-bottom: 25px;
+}
+
+.last{
+	margin: 0;
+}
+
+.image{
+	width: 100%;
+	text-align: center;
+	margin: 0px 0px 80px 0px;
+}
+.img-first{
+	margin: 0px 30px 0px 0px;
+}
+
+img {
+	display: inline-block;	
+}
+
+.second{
+	max-width: 605px;
+}
+footer{
+	max-width: 816px;
+	margin: 0 auto;
+	text-align: center;
+}
+a{
+	font-size: 25px;
+	letter-spacing: 10px;
+	text-align: center;
+	color: #212529;
+	text-transform: uppercase;
+	font-weight: 700;
+}
