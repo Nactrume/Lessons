@@ -8,78 +8,72 @@ body{
 	color: #6C757D;
 }
 
-h2{
-	font-weight: 700;
-	font-size: 25px;
-	color: #212529;
-}
 
-.wrapper{
-	
-}
-[class*=__container]{
+.article{
 	max-width: 816px;
-	margin: 0px auto	80px;
-
+	margin: 0 auto 80px;
 }
-
 
 .title{
 	max-width: 400px;
-	line-height: 1.6;
-	margin:80px 0px 40px 0px;
+	margin: 0px 0px 40px 0px;
+}
+.title-2{
+	max-width: 600px;
 }
 
-.info{
+.title-info{
 	margin: 0px 0px 15px 0px;
 }
-
-
-.info-text{
-	font-size: 14px;
+.title-info p {
 	display: inline-block;
-	margin:0px 25px 0px 0px;
-	}
-
-.author	{
+	font-size: 12px;
+	line-height: 1.6;
+	margin: 0px 25px 0px 0px;
+}
+.bold{
 	font-weight: 700;
 }
 
-
-.article-text{
-	margin-bottom: 25px;
+h2{
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #212529;
 }
 
-.last{
-	margin: 0;
+.text{
+	margin: 0px 0px 25px 0px;
 }
 
 .image{
+	max-width: 1240px;
+	margin: 0 auto 80px;
+	font-size: 0;
+}
+
+.image img{
 	width: 100%;
-	text-align: center;
-	margin: 0px 0px 80px 0px;
-}
-.img-first{
-	margin: 0px 30px 0px 0px;
 }
 
-img {
-	display: inline-block;	
+.image-small img {
+		width:50%;
 }
 
-.second{
-	max-width: 605px;
+.small-left{
+	padding: 0px 15px 0px 0px;
 }
+.small-right{
+	padding: 0px 0px 0px 15px;
+}
+
+
 footer{
-	max-width: 816px;
-	margin: 0 auto;
-	text-align: center;
-}
-a{
-	font-size: 25px;
-	letter-spacing: 10px;
-	text-align: center;
-	color: #212529;
-	text-transform: uppercase;
+	font-size: 20px;
 	font-weight: 700;
+	line-height: 1.6;
+
+	letter-spacing: 20px;
+	text-transform: uppercase;
+	text-align: center;
 }
