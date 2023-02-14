@@ -1,0 +1,46 @@
+@import url(reset.css);
+
+
+body{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.67;
+	color: #E5E5E5;
+	background: url(../img/header.png) center / cover	 no-repeat fixed ;
+}
+
+[class*="__container"]{
+	max-width: 1270px;
+	margin: 0 auto;
+	
+}
+header{
+	padding: 330px 0px 100px 0px;
+	margin: 0px 0px 150px 0px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #00eeffa2;
+	}
+main{
+	margin-bottom: 100px;
+}
+	.article{
+		font-size: 25px;
+		padding: 0px 15px 0px 15px;
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	}
+
+
+
+
+	footer{
+		border: 10px rgb(0, 54, 85) dashed;
+		border-radius: 50%;
+		height: 450px;
+		background: url(../img/speaker.png) 50% no-repeat rgba(28, 122, 151, 0.486);
+	}
