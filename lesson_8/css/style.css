@@ -59,7 +59,7 @@
 	height: 2px;
 	width: 100%;
 	background-color: #DDBEA9;
-	border-radius: 5;
+	border-radius: 1px;
 }
 
 
@@ -72,7 +72,7 @@
 }
 
 .header-data{
-	ont-weight: 300;
+	font-weight: 300;
 	font-size: 12px;
 	line-height: 1.67;
 	color: #E5E5E5;
@@ -113,11 +113,13 @@ main{
 	margin-bottom: 45px;
 }
 
- ol,ul{
+ ol{
 	display: inline-block;
 	counter-reset: item;
-
 	}
+
+
+
 .order-list{
 	margin-bottom: 105px;
 }
@@ -179,7 +181,8 @@ main{
 }
 .diamond li:hover::before{
 	background-color: #660a91;
-	rotate: 360deg;	}
+	transform: rotate(360deg);
+	}
 
 	
 ol > *:not(:last-child){
@@ -190,6 +193,10 @@ ol > *:not(:last-child){
 .unorder-list ul:not(:last-child){
 	margin: 0px 63px 63px 0px;
 }
+.unorder-list li{
+	max-width: 309px;
+	}
+
 
 ul{
 	display: inline-block;
@@ -210,7 +217,7 @@ ul{
 }
 
 .point li:hover::before{
-	scale: 1.4;
+	transform:scale(1.4);
 	text-decoration: underline;
 }
 
@@ -385,7 +392,7 @@ ul > *:not(:last-child){
 		transition: all 1s;
 }
 .image:hover{
-	scale:1.04;
+	transform: scale(1.08);
 }
 
 
