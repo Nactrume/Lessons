@@ -1,0 +1,473 @@
+@import url(reset.css);
+
+[class*="__container"]{
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0px 15px 0px 15px;
+}
+
+/* *HEADER */
+
+.header{
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	padding: 30px 0px 100px 0px;
+	background: url(../img/header.png) center / cover no-repeat;
+}
+
+
+.header-top{
+	margin-bottom: 269px; /* 269/467 */
+}
+.top-logo{
+	display: inline-block;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.39;
+	color: #F8F9FA;
+	margin-right: 67.258065%; /* 834/1240 */
+}
+
+.top-menu{
+	display: inline-block;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 2.08;
+	color: rgba(248, 249, 250, 0.5);
+}
+.menu-item{
+	min-height: 36px;
+	transition: all 0.5s;
+}
+
+.top-menu > *{
+	display:inline-block;
+	}
+.top-menu >*:not(:last-child){
+	margin: 0px 25px 0px 0px;
+}
+
+.menu-link img{
+	vertical-align: middle;
+}
+
+.menu-link:hover::after{
+	content: "";
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: #DDBEA9;
+	border-radius: 5;
+}
+
+
+.header-content{
+	display: inline-block;
+	max-width: 605px;
+}
+.header-content >*:not(:last-child){
+	margin: 0px 0px 15px 0px;
+}
+
+.header-data{
+	ont-weight: 300;
+	font-size: 12px;
+	line-height: 1.67;
+	color: #E5E5E5;
+}
+.header-title{
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #F8F9FA;
+}
+.header-text{
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.67;
+	color: #E5E5E5;
+}
+
+
+/* *MAIN */
+main{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	color: #637381;
+}
+.main__container{
+	max-width: 1175px;
+	margin: 0 auto ;
+	padding: 150px 15px 150px 15px;
+}
+[class*="__title"]{
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.08;
+	color: #212B36;
+	margin-bottom: 45px;
+}
+
+ ol,ul{
+	display: inline-block;
+	counter-reset: item;
+
+	}
+.order-list{
+	margin-bottom: 105px;
+}
+.order-list ol:not(:last-child){
+	margin: 0px 63px 63px 0px;
+}
+
+
+.circle li::before{
+	counter-increment: item;
+	content: counter(item);
+	display:inline-block;
+	margin: 0px 10px 0px 0px;
+	font-size: 16px;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #3056D3;
+	text-align: center;
+	padding-top: 5px;	
+
+}
+
+.square li::before{
+	counter-increment: item;
+	content: counter(item);
+	display:inline-block;
+	margin: 0px 10px 0px 0px;
+	font-size: 16px;
+	height: 25px;
+	width: 25px;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #3056D3;
+	text-align: center;
+	padding-top: 5px;	
+}
+
+.diamond li::before{
+	counter-increment: item;
+	content: counter(item);
+	display:inline-block;
+	margin: 0px 10px 0px 0px;
+	font-size: 16px;
+	height: 25px;
+	width: 25px;
+	border-radius:4px;
+	color: #fff;
+	background-color: #3056D3;
+	text-align: center;
+	padding-top: 5px;	
+	transition: all 2s;
+
+}
+
+.diamond li:hover{
+	text-decoration: underline;
+}
+.diamond li:hover::before{
+	background-color: #660a91;
+	rotate: 360deg;	}
+
+	
+ol > *:not(:last-child){
+	margin: 0px 0px 23px 0px;
+}
+
+
+.unorder-list ul:not(:last-child){
+	margin: 0px 63px 63px 0px;
+}
+
+ul{
+	display: inline-block;
+	min-width: 309px;
+	vertical-align:top;
+	
+}
+
+
+.point li::before{
+	content: "";
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/icons/point.png) 0 50% no-repeat;
+	height: 8px;
+	width: 8px;
+	transition: all 0.5s;
+}
+
+.point li:hover::before{
+	scale: 1.4;
+	text-decoration: underline;
+}
+
+
+.point li::before{
+	content: "";
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/icons/point.png) 0 50% no-repeat;
+	height: 8px;
+	width: 8px;
+}
+
+.check-blue li::before{
+	content: "";
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/icons/check-blue.png) 0 50% no-repeat;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+	transition: all 0.5s;
+}
+.check-blue li:hover::before{
+	background: url(../img/icons/check-green.png) 0 50% no-repeat;
+	}
+
+	.check-blue li:hover{
+		text-decoration: underline;
+		color: #1bbb81;
+	}
+	.check-blue li:visited{
+	
+	}
+
+ul > *:not(:last-child){
+	margin: 0px 0px 23px 0px;
+}
+.check-green li::before{
+	content: "";
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/icons/check-green.png) 0 50% no-repeat;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+	transition: all 0.5s;
+}
+.check-green li:active:nth-child(odd){
+	background-color: #4fbebe42;
+}
+
+.cross-circle li::before{
+	content: "";
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/icons/cross-circle.png) 0 50% no-repeat;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+	transition: all 0.5s;
+}
+.cross-circle li:hover::before{
+	
+	background: url(../img/icons/check-green.png) 0 50% no-repeat;
+}
+.arrow li::before{
+	content: "";
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/icons/arrow-right.png) 0 50% no-repeat;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+	transition: all 1s;
+}
+.arrow li:hover{
+	text-decoration: underline;
+	color: #47525c;
+}
+
+.star li::before{
+	content: "";
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/icons/star.png) 0 50% no-repeat;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+	transition: all 0.3s;
+	visibility: hidden;
+}
+
+.star li:hover::before{
+	visibility: visible;
+}
+
+/*  */
+.footer{ 
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 81px 0px 85px 0px;
+	background: linear-gradient(115deg, rgba(48,88,211,0) 70%, rgba(48,88,211,0.08) 70%), linear-gradient(115deg, rgba(48,88,211,0) 65%, rgba(48,88,211,0.08) 65%) #f4f7ff;
+}
+
+.footer img{
+	max-width:100%;
+	
+}
+.footer h2{
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.25;
+	color: #212B36;
+	margin: 0px 0px 15px 0px;
+}
+
+.selling-block{
+	max-width: 1200px;
+	margin: 0 auto 80px;
+	padding: 0px 15px 0px 15px;
+}
+
+.selling{
+	display: inline-block;
+	
+
+	
+}
+.text{
+	max-width: 570px;
+	margin-right: 179px;
+	margin-bottom: 20px;
+	padding: 64px 0px 0px 0px;	
+}
+
+.text-price{
+	font-size: 18px;
+	line-height: 1.33;
+	color: #3056D3;
+	margin: 0px 0px 13px 0px;
+}
+
+.description{
+	font-weight: 500;
+	color: #637381;
+	margin: 0px 0px 35px 0px;
+}
+.button{
+	display: inline-block;
+	color: white;
+	background: #3056D3;
+	border-radius: 30px;
+	padding: 10px 30px;
+	box-shadow: 0 4px #182a64;
+	transition: all 0.5s;
+}
+.button:hover{
+	background: #4f69c0;
+}
+.button:active{
+	background: #4f69c0;
+	margin: 4px 0px 0px 0px;
+	box-shadow: none;
+}
+
+.image{
+		vertical-align: top;
+		transition: all 1s;
+}
+.image:hover{
+	scale:1.04;
+}
+
+
+.practice__container{
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.practice-title{
+	margin-bottom: 40px;
+	font-size: 72px;
+	letter-spacing: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #1bbb81;
+	text-align: center;
+	transition: all 1s;
+}
+.practice-title:hover{
+	color: #182a64;
+	border: 8px #182a64 solid;
+	border-radius: 10px;
+	background-color: #1bbb81;
+}
+
+.interesting-links{
+	max-width: 500px;
+	margin: 0 auto 50px;
+	padding: 10px;
+	border: 2px solid;
+	border-radius: 10px;
+	text-align: center; 	
+}
+
+.interesting-links ul{
+	visibility: hidden;
+	opacity: 0;
+	transition: all 2s;
+}
+.interesting-links:hover ul{
+		visibility: visible;	
+		opacity: 1;
+}
+
+
+.interesting-links-title{
+	margin-bottom: 10px;
+	font-size: 26px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.logo{
+	max-width: 100px;
+	transition:all 1s;
+}
+.logo:hover{
+	max-width: 200px;
+}
+
+.visited{
+	max-width: 500px;
+	margin: 0 auto;
+	color: #1bbb81;
+}
+.visited-title{
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #660a91;
+	text-decoration: underline;
+}
+
+.visited a{
+	display: inline-block;
+	padding: 10px;
+	color: #1bbb81;
+}
+
+.visited a:visited{
+	color: #182a64;
+}
