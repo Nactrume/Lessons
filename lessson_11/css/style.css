@@ -250,7 +250,7 @@ body{
 	transition: all 0.5s;
 }
 .social__img:hover{
-	transform: scale(130%);
+	transform: scale(1.3);
 }
 
 
