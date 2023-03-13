@@ -1,0 +1,328 @@
+@import url(reset.css);
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+[class*="__container"]{
+	max-width: 1430px;
+	margin: 0 auto;
+	padding: 100px 15px;
+}
+
+.wrapper{
+	overflow: clip;
+	min-height: 100%;
+}
+
+body{
+	font-family: 'Climate Crisis', cursive;
+	font-size: 40px;
+	text-align: center;
+}
+
+.blocks{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.blocks__wrapper{
+	background-color: rgba(128, 128, 128, 0.274);
+}
+
+.blocks__block{
+	display: flex;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: 400px;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+
+
+/*? TRANSLATE */
+
+.blocks__block--translate-first{
+	background-color: tan;
+	color: teal;
+	transition: all 1s;
+	
+}
+.blocks__wrapper:hover .blocks__block--translate-first{
+	transform: translateY(400px);
+	
+}
+.blocks__block--translate-second{
+	background-color: teal;
+	color: darkolivegreen ;
+	transition: all 1s;
+	
+}
+.blocks__wrapper:hover .blocks__block--translate-second{
+	transform: translateX(-125%);
+
+}
+	
+.blocks__block--translate-third{
+	background-color: darkolivegreen;
+	color: tan;
+	transition: all 1s;
+}
+.blocks__wrapper:hover .blocks__block--translate-third {
+	transform: translate(-250%, 100%);
+}
+
+
+
+/*? SCALE */
+
+.blocks__block--scale-first{
+	background-color: tan;
+	color: teal;
+	transition: all 1s;
+	transform: scale(0.5);
+	
+}
+.blocks__wrapper:hover .blocks__block--scale-first{
+	transform: scale(1);
+	
+}
+.blocks__block--scale-second{
+	background-color: teal;
+	color: darkolivegreen ;
+	transition: all 1s;
+	
+}
+.blocks__wrapper:hover .blocks__block--scale-second{
+	transform: scale(1, 0.25);
+
+}
+	
+.blocks__block--scale-third{
+	background-color: darkolivegreen;
+	color: tan;
+	transform: scale(-1, 0);
+	transition: all 1s;
+}
+.blocks__wrapper:hover .blocks__block--scale-third {
+	transform: scale(1, 1);
+}
+
+
+/* ? RATATE */
+
+.blocks__block--rotate-first{
+	background-color: tan;
+	color: teal;
+	transition: all 5s;
+		
+}
+.blocks__wrapper:hover .blocks__block--rotate-first{
+	transform: rotate(720deg);
+	background-color: teal;
+	color: darkolivegreen ;
+	
+}
+.blocks__block--rotate-second{
+	background-color: teal;
+	color: darkolivegreen ;
+	transition: all 2s;
+	transform: rotateX(90deg);
+	
+}
+.blocks__wrapper:hover .blocks__block--rotate-second{
+	transform: rotateX(0deg);
+}
+	
+.blocks__block--rotate-third{
+	background-color: darkolivegreen;
+	color: tan;
+	transition: all 2s;
+	opacity: 0;
+}
+.blocks__wrapper:hover .blocks__block--rotate-third {
+	opacity: 1;
+	transform: rotate(-360deg);
+}
+
+
+/* ? SKEW */
+.blocks__block--skew-first{
+	background-color: tan;
+	color: teal;
+	transition: all 1s;
+		
+}
+.blocks__wrapper:hover .blocks__block--skew-first{
+	transform: skew(50deg, -50deg);
+	border: 1px solid skyblue;	
+	border-radius: 50%;
+}
+.blocks__block--skew-second{
+	background-color: teal;
+	color: darkolivegreen ;
+	transition: all 2s;
+	
+	
+}
+.blocks__wrapper:hover .blocks__block--skew-second{
+	transform: skewX(30deg);
+}
+	
+.blocks__block--skew-third{
+	background-color: darkolivegreen;
+	color: tan;
+	
+	transition: all 2s;
+	
+}
+.blocks__wrapper:hover .blocks__block--skew-third {
+	transform: skewY(40deg);
+}
+
+/* ? TRANSFORM MULTI */
+
+.blocks__block--transform-multi-first{
+	background-color: tan;
+	color: teal;
+	transition: all 1s;
+		
+}
+.blocks__wrapper:hover .blocks__block--transform-multi-first{
+	transform: rotate(360deg) scale(1.2) translate(50px, 50px);
+}
+.blocks__block--transform-multi-second{
+	background-color: teal;
+	color: darkolivegreen ;
+	transition: all 2s;
+	
+	
+}
+.blocks__wrapper:hover .blocks__block--transform-multi-second{
+	transform: rotate(360deg) skew(20deg);
+}
+	
+.blocks__block--transform-multi-third{
+	background-color: darkolivegreen;
+	color: tan;
+	transition: all 2s;
+	transform: translate(50%, 50%) skewY(10deg) scale(0.2);
+	
+}
+.blocks__wrapper:hover .blocks__block--transform-multi-third {
+	transform: translate(-50%, -50%) scale(0.5);
+}
+
+/* ? TRANSFORM-ORIGIN */
+
+.blocks__block--origin-first{
+	background-color: tan;
+	color: teal;
+	transition: all 1s;
+	transform-origin: 100% 100%;
+	
+}
+.blocks__wrapper:hover .blocks__block--origin-first{
+	transform: rotate(360deg);
+	border-radius: 50%;
+}
+.blocks__block--origin-second{
+	background-color: teal;
+	color: darkolivegreen ;
+	transition: all 2s;
+	transform-origin:0 0;	
+}
+.blocks__wrapper:hover .blocks__block--origin-second{
+	transform: scale(0.5);
+}
+	
+.blocks__block--origin-third{
+	background-color: darkolivegreen;
+	color: tan;
+	transition: all 2s;
+	transform-origin: 100% 0;
+	transform:  rotate(90deg) scale(0);
+	
+}
+.blocks__wrapper:hover .blocks__block--origin-third {
+	transform:  rotate(0deg) scale(1);
+}
+
+
+/* ? PERSPECTIVE */
+.blocks__wrapper--perspective{
+	font-size: 35px;
+	perspective-origin: center;
+	perspective: 400px;
+}
+.blocks__block--perspective-first{
+	background-color: tan;
+	color: teal;
+	transition: all 1s;
+	transform: rotateX(60deg);
+	
+}
+.blocks__wrapper:hover .blocks__block--perspective-first{
+	transform: rotate(0deg);
+}
+.blocks__block--perspective-second{
+	background-color: teal;
+	color: darkolivegreen ;
+	transition: all 2s;
+	transform: rotateY(-60deg);
+
+}
+.blocks__wrapper:hover .blocks__block--perspective-second{
+	transform: rotate(0deg);
+}
+	
+.blocks__block--perspective-third{
+	background-color: darkolivegreen;
+	color: tan;
+	transition: all 2s;
+	
+	
+}
+.blocks__wrapper:hover .blocks__block--perspective-third {
+	transform: rotateX(360deg) scale(0.8);
+}
+
+/* ? 3D */
+.blocks__wrapper--perspective{
+	font-size: 35px;
+	perspective-origin: center;
+	perspective: 400px;
+}
+.blocks__block--translate3d-first{
+	background-color: tan;
+	color: teal;
+	transition: all 1s;
+	
+	
+}
+.blocks__wrapper:hover .blocks__block--translate3d-first{
+	transform: translate3d(50px, 50px, 50px);
+}
+.blocks__block--scale3d-second{
+	background-color: teal;
+	color: darkolivegreen ;
+	transition: all 2s;
+	
+
+}
+.blocks__wrapper:hover .blocks__block--scale3d-second{
+	transform: scale3d(1.2, 1.2, 1.5);
+}
+	
+.blocks__block--rotate3d-third{
+	background-color: darkolivegreen;
+	color: tan;
+	transition: all 2s;	
+}
+.blocks__wrapper:hover .blocks__block--rotate3d-third {
+	transform: rotate3d(1, 1, 1, 360deg);	
+}
