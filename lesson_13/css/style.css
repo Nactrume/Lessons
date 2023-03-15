@@ -1,0 +1,132 @@
+@import url(reset.css);
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+[class*="__container"]{
+	max-width: 1430px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.wrapper{
+	overflow: clip;
+	min-height: 100%;
+}
+
+body{
+	font-family: 'Climate Crisis', cursive;
+	font-size: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+.header{
+	color: cadetblue;
+	text-transform: uppercase;
+	background-color: yellowgreen;
+}
+.header--fixed{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+.header__link{
+	display: inline-block;
+	transition: all 0.5s ease-in-out 0.5s;
+}
+.header__link:hover{
+	padding: 10px;
+	background-color: gold;
+	border-radius: 10px;
+	}
+
+.main{
+	
+	padding: 100px;
+}
+.main__container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.main__block{
+	padding: 5px;
+	width: 100%;
+	margin: 5px;
+	background-color: gray;
+}
+
+
+
+.block__item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5px;
+	height: 50px;
+	width: 80px;
+	transition-duration: 3s;
+	background-color: teal;
+	font-size: 12px;
+	
+
+}
+.block__item--ease{
+	transition-timing-function: ease;
+}
+.block__item--ease-in{
+	transition-timing-function: ease-in;
+}
+.block__item--ease-out{
+	transition-timing-function: ease-out;
+}
+.block__item--ease-in-out{
+	transition-timing-function: ease-in-out;
+}
+.block__item--linear{
+	transition-timing-function: linear;
+}
+.block__item--step-start{
+	transition: step-start;
+}
+.block__item--step-end{
+	transition-timing-function: step-end;
+}
+.block__item--steps-start{
+	transition-timing-function: steps(10, start);
+}
+.block__item--steps-end{
+	transition-timing-function: steps(10, end);
+}
+.block__item--cubic-bezier{
+	transition-timing-function: cubic-bezier(.07,1.8,.97,-0.98);
+}
+
+
+
+.block__item--delay-1{
+	transition-delay: 0.5s;
+}
+.block__item--delay-2{
+	transition-delay: 1s;
+}
+.block__item--delay-3{
+	transition-delay: 1.5s;
+}
+
+
+.block__item--mix{
+	transition:width 1s ease-in-out 0s,background-color 1s linear 1s;
+	
+}
+
+.block:hover .block__item{
+	width: 100%;
+	background-color:gold;
+}
+
+
+.content__transform-origin{
+	
+}
