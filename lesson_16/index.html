@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__checkout checkout">
+				<div class='checkout__container'>
+					<div class="checkout__header header-checkout">
+						<h1 class="header-checkout__title">Checkout</h1>
+						<div class="header-checkout__text">There are 3 products in your cart</div>
+					</div>
+					<div class="checkout__billing billing">
+						<h2 class="billing__title ">Billing Details</h2>
+						<form action="#" method="POST" enctype="multipart/form-data" class="billing__form form-billing">
+							<div class="form-billing__info">
+								<div class="form-billing__inner">
+									<input required type="text" name="fname" placeholder="First name*"
+										class="form-billing__input">
+								</div>
+								<div class="form-billing__inner">
+									<input required type="text" name="lname" placeholder="Last name*"
+										class="form-billing__input">
+								</div>
+								<div class="form-billing__inner">
+									<input required type="text" name="address" placeholder="Address line*"
+										class="form-billing__input">
+								</div>
+								<div class="form-billing__inner">
+									<input required type="text" name="address-two" placeholder="Address line 2"
+										class="form-billing__input">
+								</div>
+								<div class="form-billing__inner">
+									<select required name="coutry" id="country-id" class="form-billing__select">
+										<option value="">Coutry*</option>
+										<option value="Ukraine">Ukraine</option>
+										<option value="Poland">Poland</option>
+										<option value="United Kingdom">United Kingdom</option>
+										<option value="Canada">Canada</option>
+										<option value="USA">USA</option>
+									</select>
+								</div>
+								<div class="form-billing__inner">
+									<input required type="text" name="city" placeholder="City/Town*" class="form-billing__input">
+								</div>
+								<div class="form-billing__inner">
+									<input required type="text" name="postcode" placeholder="Postcode / ZIP*"
+										class="form-billing__input">
+								</div>
+								<div class="form-billing__inner">
+									<input maxlength="10" required type="tel" name="phone" placeholder="Phone*"
+										class="form-billing__input">
+								</div>
+								<div class="form-billing__inner">
+									<input required type="text" name="postcode" placeholder="Postcode / ZIP*"
+										class="form-billing__input">
+								</div>
+								<div class="form-billing__inner">
+									<input maxlength="10" required type="tel" name="phone" placeholder="Phone*"
+										class="form-billing__input">
+								</div>
+								<div class="form-billing__textarea">
+									<textarea placeholder="Additional information" name="more" cols="30" rows="10"></textarea>
+								</div>
+							</div>
+							<div class="form-billing__checkbox checkbox">
+								<div class="checkbox__inner">
+									<input type="checkbox" name="account" id="account-id" class="checkbox__input">
+									<label for="account-id" class="checkbox__label">Create Account</label>
+								</div>
+								<div class="checkbox__inner">
+									<input type="checkbox" name="different" id="different-id" class="checkbox__input">
+									<label for="different-id" class="checkbox__label">Ship to a different address?</label>
+								</div>
+							</div>
+							<div class="form-billing__discount discount">
+								<h3 class="discount__title">Apply Coupon to get discount!</h3>
+								<div class="discount__info">
+									<div class="discount__inner">
+										<input type="text" name="discount" class="discount__input" placeholder="Coupon code">
+									</div>
+									<button class="discount__btn" type="button">Apply Code</button>
+								</div>
+							</div>
+							<button class="form-billing__btn" type="submit">Place an Order</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="page__shipping shipping">
+				<div class='shipping__container'>
+					<form action="#" method="post" enctype="multipart/form-data"
+						class="shipping__form form-shipping form-shipping--border">
+						<h2 class="form-shipping__title">Shipping Address</h2>
+						<div class="form-shipping__inner">
+							<label for="email-id" class="form-shipping__label">Email Address <span>*</span></label>
+							<input required type="text" name="email" id="email-id" class="form-shipping__input"
+								placeholder="roni_cost@example.com">
+						</div>
+						<div class="form-shipping__inner">
+							<label for="password-id" class="form-shipping__label">Password</label>
+							<input type="password" name="password" id="password-id" class="form-shipping__input"
+								placeholder="******************">
+						</div>
+						<div class="form-shipping__inner form-shipping__inner--small-margin ">
+							<label for="post-id" class="form-shipping__label">Zip/Postal Code</label>
+							<input type="text" name="post" id="post-id" class="form-shipping__input">
+						</div>
+						<div class="form-shipping__text">You already have an account with us. Sign in or continue as guest.
+						</div>
+						<div class="form-shipping__inner-button">
+							<button type="submit" class="form-shipping__btn">Login</button>
+							<a href="#" class="form-shipping__fogrgot-password">Forgot Your Password?</a>
+						</div>
+					</form>
+					<form action="#" method="post" enctype="multipart/form-data" class="shipping__form form-shipping ">
+						<div class="form-shipping__inner">
+							<label for="fname-id" class="form-shipping__label">First Name <span>*</span></label>
+							<input required type="text" name="fname" id="fname-id" class="form-shipping__input">
+						</div>
+						<div class="form-shipping__inner">
+							<label for="lname-id" class="form-shipping__label">Last Name <span>*</span></label>
+							<input required type="text" name="lname" id="lname-id" class="form-shipping__input">
+						</div>
+						<div class="form-shipping__inner">
+							<label for="company-id" class="form-shipping__label">Company</label>
+							<input required type="text" name="company" id="company-id" class="form-shipping__input">
+						</div>
+						<div class="form-shipping__inner">
+							<label for="street-id" class="form-shipping__label">Street Address <span>*</span></label>
+							<div class="form-shipping__column">
+								<input type="text" name="address" id="street-id" class="form-shipping__input">
+								<input type="text" name="address" id="street-2-id" class="form-shipping__input">
+								<input type="text" name="address" id="street-3-id" class="form-shipping__input">
+							</div>
+						</div>
+						<div class="form-shipping__inner">
+							<label for="country-id" class="form-shipping__label">Country <span>*</span></label>
+							<input required type="text" name="country" id="country-2-id" class="form-shipping__input">
+						</div>
+						<div class="form-shipping__inner form-shipping__inner--select ">
+							<label for="region-id" class="form-shipping__label">State/Province <span>*</span></label>
+							<select required name="coutry" id="region-id" class="form-shipping__select">
+								<option value="">Please select a region, state or province</option>
+								<option value="Ukraine">Ukraine</option>
+								<option value="Poland">Poland</option>
+								<option value="United Kingdom">United Kingdom</option>
+								<option value="Canada">Canada</option>
+								<option value="USA">USA</option>
+							</select>
+						</div>
+						<div class="form-shipping__radio radio-shipping">
+							<h2 class="radio-shipping__title">Shipping Methods</h2>
+							<div class="radio-shipping__inner radio-shipping__inner--border ">
+								<div class="radio-shipping__box">
+									<input type="radio" name="methods" id="radio-first" class="radio-shipping__input">
+									<label for="radio-first" class="radio-shipping__label">$5.00</label>
+								</div>
+								<div class="radio-shipping__box">Fixed</div>
+								<div class="radio-shipping__box">Flat Rate</div>
+							</div>
+							<div class="radio-shipping__inner">
+								<div class="radio-shipping__box">
+									<input type="radio" name="methods" id="radio-second" class="radio-shipping__input">
+									<label for="radio-second" class="radio-shipping__label">$10.00</label>
+								</div>
+								<div class="radio-shipping__box">Table Rate</div>
+								<div class="radio-shipping__box">Best Way</div>
+							</div>
+						</div>
+						<div class="form-shipping__inner">
+							<button class="form-shipping__btn " type="submit">NEXT</button>
+							<button class="form-shipping__btn-back " type="button">BACK</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
