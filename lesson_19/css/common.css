@@ -1,0 +1,55 @@
+
+.section--mb{
+	margin-bottom: 120px;
+}
+
+
+
+/*-----TITLES------- */
+.title{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.12; 
+	color: #212B36;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+	
+}
+.title--semi-bold{
+	font-weight: 600;
+	font-size: 20px;
+	line-height:1.5;
+	color: #212B36;
+	text-transform: capitalize;
+}
+.over-title{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.33;
+	text-align: center;
+	color: #3056D3;
+	margin-bottom: 8px;
+
+}
+.price{
+	font-weight: 600;
+	font-size: 16px;
+	line-height:1.5;
+	color: #212B36;
+}
+.price--blue{
+	font-weight: 700;
+	color: #3056D3;
+	
+}
+.reviews{
+
+}
+.reviews,
+.info{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #637381;
+}
+
